@@ -46,12 +46,12 @@ function consFinder(text){
   for (let i = 0; i<text.length; i+=1){
     console.log("dogs")
 
-    vowels.forEach(function(vowel) {
-      if (textArray[i] === vowel) {
+    for (let v = 0; v<vowels.length; v++) {
+      if (textArray[i] === vowels[v]) {
         console.log("firing!")
         return [i];
       }
-    })
+    }
   }
 }
 
