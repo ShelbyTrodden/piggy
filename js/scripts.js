@@ -42,13 +42,9 @@ function pigLatin(str)  {
 function consFinder(text){
   const textArray = text.split('');
   const vowels = ["a","e","i","o","u"];
-
   for (let i = 0; i<text.length; i+=1){
-    console.log("dogs")
-
-    for (let v = 0; v<vowels.length; v++) {
+    for (let v = 0; v<vowels.length; v+=1) {
       if (textArray[i] === vowels[v]) {
-        console.log("firing!")
         return [i];
       }
     }
